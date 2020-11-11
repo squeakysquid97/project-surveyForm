@@ -9,59 +9,58 @@
   <header>
     <h1>Survey Form</h1>
     <p>Please enjoy this sick survey form</p>
-    <h6>(I worked really hard on it)</h6>
+    <p>(I worked really hard on it)</p>
   </header>
   <main>
-    <form action="" method="GET">
-      <section>
-        <label for="name">Name</label>
-        <input type="text" name="name" required><br>
-      </section>
-      <section>
-        <label for="email">Email</label>
-        <input type="text" name="email" required><br>
-      </section>
-      <section>
-        <label for="age">Age (optional)</label><br>
-        <input type="text" name="age" required>
-      </section>
-      <section>
-        <label for="role">Describe your role</label><br>
-        <input type="text" name="role" required>
-      </section>
-      <section>
-        <label for="button section">Would you recommend this survey?</label><br>
-        <input type="radio" name="button" required>
-        <label for="button">Definitely</label><br>
-        <input type="radio" name="button" required>
-        <label for="button">Maybe</label><br>
-        <input type="radio" name="button" required>
-        <label for="button">Not sure</label>
-      </section>
-      <section>
-        <label for="favorite">What is your favorite feature of this form?</label><br>
-        <input type="text" name="favorite">
-      </section>
-      <section>
-        <label for="improved">What would you like to see improved?</label><br>
-        <input type="checkbox" name="css" value="Bike">
-        <label for="vehicle1">Make it prettier with CSS!</label><br>
-        <input type="checkbox" name="html" value="Car">
-        <label for="vehicle2">Improve the content with HTML!</label><br>
-        <input type="checkbox" name="javascript" value="Boat">
-        <label for="vehicle3">Add functionality with JavaScript!</label><br>
-      </section>
-      <section>
-        <label for="comment">Any comments or suggestions?</label><br>
-        <input type="text" name="comment">
-      </section>
-      <section>
-        <input type="submit">
-      </section>
+    <form>
+      <fieldset>
+        <label>Name: <input type="text" name="name" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Email: <input type="text" name="email" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Age (optional): <input type="text" name="age" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Describe your role: <input type="text" name="role" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend this survey?</legend>
+        <label><input title="Definitely" type="radio" name="button" required>
+          Definitely</label>
+        <label><input title="Maybe" type="radio" name="button" required>
+          Maybe</label>
+        <label><input title="Not sure" type="radio" name="button" required>
+          Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite feature of this form?</label>
+        <input title="favorite" type="text" name="favorite">
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved?</legend>
+        <label text="css">Make it prettier with CSS!
+          <input type="checkbox" name="css" text="Make it prettier with CSS!"> </label>
+        <label text="html">Improve the content with HTML!
+          <input type="checkbox" name="html" text="Improve the content with HTML!"></label>
+        <label text="javascript">Add functionality with JavaScript!
+          <input type="checkbox" name="javascript" text="Add functionality with JavaScript!"></label>
+      </fieldset>
+      <fieldset>
+        <label>Any comments or suggestions?<input type="text" name="comment"></label>
+      </fieldset>
+      <fieldset>
+        <button>Submit</button>
+      </fieldset>
     </form>
   </main>
   <footer>
-
+    <h2>Written and Designed by Peter Franklin</h2>
   </footer>
 </body>
 
