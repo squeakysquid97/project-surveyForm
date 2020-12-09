@@ -1,3 +1,4 @@
+/* Universal Styles */
 :root {
   box-sizing: border-box;
 }
@@ -8,10 +9,26 @@
 }
 
 html {
-  background-image: url(/background.png);
+  background-image: url(/background.jpg);
   background-size: 180vh;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
+
+button {
+  text-transform: uppercase;
+  width: 10vw;
+  background: #84d761;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  height: 60%;
+}
+
+/* Header Styles */
 
 header {
   text-align: center;
@@ -20,6 +37,9 @@ header {
   flex-direction: column;
 }
 
+header p:hover + header p:last-child {
+  display: block;
+}
 header p:last-child {
   display: none;
 }
@@ -32,6 +52,7 @@ header p {
   flex-direction: column;
   margin: 1rem 2.5rem;
 }
+/* Body Styles */
 
 body {
   margin: 10rem auto;
@@ -40,6 +61,8 @@ body {
   background-color: rgba(155, 179, 197, 0.7);
   box-shadow: 2px 2px 2px grey;
 }
+
+/* Form Styles */
 
 form {
   padding: 0 2rem;
@@ -52,34 +75,19 @@ form fieldset {
   margin: 2rem;
   padding: 1rem;
 }
-form fieldset:nth-child(5) {
-  flex-direction: row-reverse;
+
+form input {
+  width: 100%;
 }
+
 form fieldset:nth-child(6) input {
   width: 100%;
   height: 6vh;
-}
-form input {
-  margin: 0 1rem;
 }
 
 fieldset:last-child {
   justify-content: center;
   align-items: center;
-}
-
-button {
-  text-transform: uppercase;
-  width: 10vw;
-  background: #84d761;
-}
-
-main {
-  height: 60%;
-}
-
-h1 {
-  font-size: 3rem;
 }
 
 footer {
