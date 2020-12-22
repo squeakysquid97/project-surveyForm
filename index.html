@@ -4,64 +4,79 @@
 <head>
   <title>Survey Form</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Survey Form</h1>
-    <p>Please enjoy this sick survey form</p>
-    <p>(I worked really hard on it)</p>
+  <header class="header__main">
+    <img class="header__main--logo" src="logo.png">
+    <div class="header__main--textbox">
+      <h1 class="header__main--heading">Survey Form</h1>
+    </div>
   </header>
   <main>
-    <form>
-      <fieldset>
-        <label>Name: <input type="text" name="name" required>
+    <form class="form__content">
+      <fieldset class="form__content--field">
+        <label class="form__content--label">Name: <input class="form__content--input" type="text" name="name" required>
         </label>
       </fieldset>
-      <fieldset>
-        <label>Email: <input type="text" name="email" required>
+      <fieldset class="form__content--field">
+        <label class="form__content--label">Email: <input class="form__content--input" type="text" name="email"
+            required>
         </label>
       </fieldset>
-      <fieldset>
-        <label>Age (optional): <input type="text" name="age" required>
+      <fieldset class="form__content--field">
+        <label class="form__content--label">Age (optional): <input class="form__content--input" type="text" name="age"
+            required>
         </label>
       </fieldset>
-      <fieldset>
-        <label>Describe your role: <input type="text" name="role" required>
+      <fieldset class="form__content--field">
+        <label class="form__content--label">Describe your role: <input class="form__content--input" type="text"
+            name="role" required>
         </label>
       </fieldset>
-      <fieldset>
-        <legend>Would you recommend this survey?</legend>
-        <label><input title="Definitely" type="radio" name="button" required>
-          Definitely</label>
-        <label><input title="Maybe" type="radio" name="button" required>
-          Maybe</label>
-        <label><input title="Not sure" type="radio" name="button" required>
-          Not sure</label>
+      <fieldset class="form__content--field form__radio">
+        <legend class="form__radio--legend">Would you recommend this survey?</legend>
+        <label class="radio__label"><input class="radio__button" title="Definitely" type="radio" name="button" required>
+          Definitely
+        </label>
+        <label class="radio__label">
+          <input class="radio__button" title="Maybe" type="radio" name="button" required>
+          Maybe
+        </label>
+        <label class="radio__label">
+          <input class="radio__button" title="Not sure" type="radio" name="button" required>
+          Not sure
+        </label>
       </fieldset>
-      <fieldset>
-        <label>What is your favorite feature of this form?</label>
-        <input title="favorite" type="text" name="favorite">
+      <fieldset class=" form__content--field form__content--comment">
+        <label class="form__comment--label form__content--label">What is your favorite feature of this form?</label>
+        <textarea class="form__comment--input form__content--input" title="favorite" type="text"
+          name="favorite"></textarea>
       </fieldset>
-      <fieldset>
-        <legend>What would you like to see improved?</legend>
-        <label text="css">Make it prettier with CSS!
-          <input type="checkbox" name="css" text="Make it prettier with CSS!"> </label>
-        <label text="html">Improve the content with HTML!
-          <input type="checkbox" name="html" text="Improve the content with HTML!"></label>
-        <label text="javascript">Add functionality with JavaScript!
-          <input type="checkbox" name="javascript" text="Add functionality with JavaScript!"></label>
+      <fieldset class="form__content--field form__radio form__button">
+        <legend class="form__radio--legend">What would you like to see improved?</legend>
+        <label class="radio__label" text="css">Make it prettier with CSS!
+          <input class="radio__button checkbox" type="checkbox" name="css" text="Make it prettier with CSS!"> </label>
+        <label class="radio__label" text="html">Improve the content with HTML!
+          <input class="radio__button checkbox" type="checkbox" name="html"
+            text="Improve the content with HTML!"></label>
+        <label class="radio__label" text="javascript">Add functionality with JavaScript!
+          <input class="radio__button checkbox" type="checkbox" name="javascript"
+            text="Add functionality with JavaScript!"></label>
       </fieldset>
-      <fieldset>
-        <label>Any comments or suggestions?<input type="text" name="comment"></label>
+      <fieldset class="form__content--field form__content--comment">
+        <label class="form__comment--label form__content--label">Any comments or suggestions?<textarea
+            class="form__comment--input form__content--input" name="comment"></textarea></label>
       </fieldset>
-      <fieldset>
-        <button>Submit</button>
+      <fieldset class="form__content--field form__content--submit">
+        <a href="" class="btn btn--success">Submit</a>
       </fieldset>
     </form>
   </main>
-  <footer>
-    <h2>Written and Designed by Peter Franklin</h2>
+  <footer class="footer__main">
+    <h2 class="footer__main--heading">Written and Designed by Peter Franklin</h2>
   </footer>
 </body>
 
